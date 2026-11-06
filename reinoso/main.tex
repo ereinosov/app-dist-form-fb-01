@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=ieee]{biblatex}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\addbibresource{refs.bib}
+
+\newcommand{\campo}[1]{\par\medskip\noindent\textbf{#1}\par\smallskip}
+\newcommand{\pendiente}{\textbf{[PENDIENTE]}}
+
+\begin{document}
+	
+	% ---------------- Caratula ----------------
+	\begin{center}
+		{\Large\textbf{Universidad T\'ecnica Estatal de Quevedo}}\\[4pt]
+		Facultad de Ciencias de la Computaci\'on\\
+		Carrera de Software\\[12pt]
+		\textbf{Aplicaciones Distribuidas (ISR-701)}\\
+		\textbf{FORM-FB-01: Fichas bibliogr\'aficas}\\
+		Fundamentos de sistemas distribuidos y arquitecturas distribuidas\\[12pt]
+		Estudiante: Reinoso V\'elez Eduardo David\\
+		Nivel y paralelo: S\'eptimo nivel, paralelo A\\
+		Fecha: 6 de noviembre de 2026\\
+		Repositorio: \url{https://github.com/ereinosov/app-dist-form-fb-01}
+	\end{center}
+	
+	\bigskip
+	\noindent\textbf{Sistema elegido para TA-IND-01:} Apache Cassandra, comparado con Amazon DynamoDB.
+	
+	\section*{Ficha 1. Ferreira et al. (2024): niveles de consistencia en NoSQL}
+	\campo{Referencia (IEEE)}
+	\fullcite{ferreira2024impacts}
+	\campo{DOI verificado}
+	10.1186/s13677-024-00716-7
+	\campo{Resumen (100 palabras)}
+	\pendiente
+	\campo{Dato concreto (con p\'agina o secci\'on)}
+	\pendiente
+	\campo{Nota personal}
+	\pendiente
+	
+	\section*{Ficha 2. Rehman, Aguiar y Barraca (2022): tolerancia a fallos en la nube}
+	\campo{Referencia (IEEE)}
+	\fullcite{rehman2022fault}
+	\campo{DOI verificado}
+	10.1109/ACCESS.2022.3182211
+	\campo{Resumen (100 palabras)}
+	\pendiente
+	\campo{Dato concreto (con p\'agina o secci\'on)}
+	\pendiente
+	\campo{Nota personal}
+	\pendiente
+	
+	\section*{Ficha 3. Kumari y Kaur (2021): revisi\'on de tolerancia a fallos}
+	\campo{Referencia (IEEE)}
+	\fullcite{kumari2021survey}
+	\campo{DOI verificado}
+	10.1016/j.jksuci.2018.09.021
+	\campo{Resumen (100 palabras)}
+	\pendiente
+	\campo{Dato concreto (con p\'agina o secci\'on)}
+	\pendiente
+	\campo{Nota personal}
+	\pendiente
+	
+	\section*{Ficha 4. Huang et al. (2022): fallos metaestables}
+	\campo{Referencia (IEEE)}
+	\fullcite{huang2022metastable}
+	\campo{ISBN verificado}
+	978-1-939133-28-1 (actas de OSDI 22; el art\'iculo no tiene DOI)
+	\campo{Resumen (100 palabras)}
+	\pendiente
+	\campo{Dato concreto (con p\'agina o secci\'on)}
+	\pendiente
+	\campo{Nota personal}
+	\pendiente
+	
+	\section*{Ficha 5. Elhemali et al. (2022): Amazon DynamoDB}
+	\campo{Referencia (IEEE)}
+	\fullcite{elhemali2022dynamodb}
+	\campo{ISBN verificado}
+	978-1-939133-29-8 (actas de USENIX ATC 22; el art\'iculo no tiene DOI)
+	\campo{Resumen (100 palabras)}
+	\pendiente
+	\campo{Dato concreto (con p\'agina o secci\'on)}
+	\pendiente
+	\campo{Nota personal}
+	\pendiente
+	
+	\printbibliography[title={Referencias}]
+	
+	\section*{Declaraci\'on de uso de inteligencia artificial}
+	\textbf{Herramienta:} Claude (Anthropic), modelo Claude Sonnet 5.5.
+	
+	\textbf{Para qu\'e la us\'e:}
+	(1) buscar en la web fuentes candidatas sobre consistencia, tolerancia a fallos y comunicaci\'on
+	en sistemas distribuidos, con Apache Cassandra como sistema elegido para TA-IND-01;
+	(2) generar la plantilla \LaTeX{} de este documento y el esqueleto del archivo \texttt{refs.bib}, y
+	(3) cotejar los datos bibliogr\'aficos de las candidatas con p\'aginas de editoriales y
+	repositorios.
+	
+	\textbf{C\'omo verifiqu\'e lo obtenido:} abr\'i personalmente el DOI o el enlace de cada una de las
+	cinco fuentes y compar\'e autores, a\~no, t\'itulo, revista o libro, volumen, n\'umero y p\'aginas con
+	\texttt{refs.bib}; correg\'i las diferencias; consult\'e en Scopus/SJR la indexaci\'on y el
+	cuartil de cada revista; y le\'i cada fuente para localizar el dato concreto y su p\'agina.
+	
+	\textbf{Redacci\'on de las fichas:} la herramienta me ayud\'o a redactar los borradores iniciales de los res\'umenes y
+	las notas, a partir de los res\'umenes de las fuentes. Yo verifiqu\'e cada afirmaci\'on, ubiqu\'e los datos concretos con su p\'agina y reescrib\'i los textos con
+	mis propias palabras. Los datos y sus p\'aginas son los que constat\'e en las fuentes.
+	
+\end{document}
