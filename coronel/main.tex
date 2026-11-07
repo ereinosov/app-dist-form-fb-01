@@ -1,0 +1,159 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage[margin=25mm]{geometry}
+\usepackage{csquotes}
+\usepackage{xcolor}
+\usepackage[backend=bibtex,style=ieee,sorting=none,maxbibnames=99,maxcitenames=99,doi=false,url=false,isbn=false]{biblatex}
+\addbibresource{refs.bib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\definecolor{heading}{HTML}{173B59}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\setlength{\headheight}{14pt}
+\emergencystretch=3em
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small FORM-FB-01}
+\fancyhead[R]{\small Khriz Alexander Coronel Gómez}
+\fancyfoot[L]{\footnotesize Borrador asistido para revisión del estudiante}
+\fancyfoot[R]{\thepage}
+\newcommand{\bloque}[1]{\par\medskip{\color{heading}\bfseries #1}\par\nobreak}
+\hypersetup{pdftitle={FORM-FB-01 - Apache Kafka},pdfauthor={Khriz Alexander Coronel Gómez}}
+\begin{document}
+{\small UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO\\
+Facultad de Ciencias de la Computación\\
+Carrera de Software}
+
+\vspace{10mm}
+{\color{heading}\LARGE\bfseries Fichas bibliográficas\par}
+{\large Fundamentos de sistemas distribuidos\\y arquitecturas distribuidas\par}
+\vspace{5mm}
+{\large\bfseries Replicación y tolerancia a fallos en Apache Kafka para la comunicación entre microservicios\par}
+\vspace{5mm}
+\begin{tabular}{@{}ll}
+Estudiante & Coronel Gómez Khriz Alexander\\
+Asignatura & Aplicaciones Distribuidas (ISR-701)\\
+Nivel y paralelo & Séptimo, A\\
+Actividad & FORM-FB-01, formativa individual\\
+Periodo de la actividad & Semana 2, del 2 al 8 de noviembre de 2026
+\end{tabular}
+
+\bloque{Enfoque para TA-IND-01}
+¿Cómo influyen la replicación y la configuración de Apache Kafka en la conservación de mensajes, la disponibilidad y la recuperación ante fallos? Las fuentes sobre Kafka Streams permiten examinar aplicaciones que procesan eventos. Sus resultados se atribuyen a los componentes y versiones estudiados.
+
+\bloque{Declaración de uso de inteligencia artificial}
+Este borrador se elaboró con apoyo de Codex, de OpenAI, para localizar fuentes, cotejar metadatos bibliográficos, proponer resúmenes y notas, preparar el código LaTeX y compilar el PDF. Se consultaron Crossref, destinos de los DOI, información editorial y versiones de autores disponibles en repositorios académicos. Cada ficha indica el alcance de la consulta.
+
+Los cinco resúmenes y las notas personales son propuestas generadas con IA. El estudiante debe contrastarlos con su lectura y redactarlos con sus propias palabras antes de entregar, conforme al enunciado. La declaración final debe reflejar las verificaciones que haya realizado personalmente.
+
+\bloque{Estado de revisión}
+Se incluyen tres artículos de revista y dos de congresos ACM. Continúan pendientes la lectura integral de las dos primeras fuentes y la evidencia directa de indexación indicada en el README.
+
+\bloque{Repositorio del trabajo}
+{\small\url{https://github.com/ereinosov/app-dist-form-fb-01}}
+
+\clearpage
+{\small\color{heading}FICHA 1 / 5\par}
+{\Large\bfseries\color{heading}Fundamentos y líneas de investigación\par}
+\bloque{Referencia IEEE}
+\begin{otherlanguage}{english}
+\fullcite{raptis2023survey}
+\end{otherlanguage}
+\bloque{Identificador DOI}
+\url{https://doi.org/10.1109/ACCESS.2023.3303810}
+\bloque{Resumen de 100 palabras}
+% INICIO_RESUMEN_1
+Raptis y Passarella estudian la dispersión de investigaciones sobre transmisión de datos mediante Apache Kafka. Organizan la literatura en cinco áreas, algoritmos, redes, datos, sistemas ciberfísicos y seguridad. Su método consiste en revisar y clasificar trabajos académicos, relacionando las propuestas de optimización con aplicaciones concretas. El resultado es una visión organizada de los problemas investigados y de las oportunidades que siguen abiertas. La revisión permite situar Kafka dentro de sistemas que intercambian información continuamente y reconocer que su evaluación requiere considerar varias dimensiones. Sirve como punto de partida para seleccionar aspectos de arquitectura, rendimiento y fiabilidad que merecen análisis posterior.
+% FIN_RESUMEN_1
+\bloque{Dato concreto y localización}
+El artículo organiza la literatura en cinco áreas, algoritmos, redes, datos, sistemas ciberfísicos y seguridad. Ubicación en el abstract, p.~85333.
+\bloque{Nota personal propuesta para adaptar}
+Esta clasificación me ayuda a ubicar la tolerancia a fallos dentro de un panorama más amplio. Usaría la fuente en el marco teórico de TA-IND-01 para presentar Kafka y delimitar las dimensiones que analizaré.
+\bloque{Verificación y versión consultada}
+{\small Se cotejaron metadatos y el abstract de la publicación. La lectura integral del PDF permanece pendiente.}
+
+\clearpage
+{\small\color{heading}FICHA 2 / 5\par}
+{\Large\bfseries\color{heading}Particionado y configuración del clúster\par}
+\bloque{Referencia IEEE}
+\begin{otherlanguage}{english}
+\fullcite{raptis2024partitioning}
+\end{otherlanguage}
+\bloque{Identificador DOI}
+\url{https://doi.org/10.1016/j.future.2023.12.028}
+\bloque{Resumen de 100 palabras}
+% INICIO_RESUMEN_2
+El artículo aborda la dificultad de configurar particiones y brokers de Apache Kafka según las necesidades de aplicaciones que intercambian datos en tiempo real. Los autores proponen optimizar ambos parámetros considerando características y restricciones del escenario estudiado. Evalúan su propuesta mediante simulaciones numéricas y experimentos con un prototipo sobre un clúster Kafka. La evaluación incluye tres escenarios relacionados con producción, consumo y transmisión en tiempo real. Su aporte principal es formular la configuración como una decisión dependiente de requisitos, en lugar de asumir valores universales. Este enfoque permite examinar cómo el particionado condiciona el funcionamiento de una arquitectura distribuida concreta.
+% FIN_RESUMEN_2
+\bloque{Dato concreto y localización}
+La evaluación incluye tres escenarios de producción, consumo y transmisión de datos en tiempo real. Ubicación en el abstract del artículo, p.~173.
+\bloque{Nota personal propuesta para adaptar}
+Me interesa relacionar el número de particiones con las necesidades de una aplicación. Incorporaría esta fuente en el análisis de arquitectura y configuración, explicando qué requisitos justifican las decisiones del clúster.
+\bloque{Verificación y versión consultada}
+{\small Se cotejaron metadatos y el abstract editorial. La lectura integral del PDF permanece pendiente.}
+
+\clearpage
+{\small\color{heading}FICHA 3 / 5\par}
+{\Large\bfseries\color{heading}Escalabilidad de microservicios\par}
+\bloque{Referencia IEEE}
+\begin{otherlanguage}{english}
+\fullcite{henning2024scalability}
+\end{otherlanguage}
+\bloque{Identificador DOI}
+\url{https://doi.org/10.1016/j.jss.2023.111879}
+\bloque{Resumen de 100 palabras}
+% INICIO_RESUMEN_3
+Henning y Hasselbring investigan la escalabilidad de herramientas de procesamiento continuo utilizadas dentro de microservicios. Comparan cinco frameworks mediante experimentos sistemáticos ejecutados en Kubernetes, tanto en una nube pública como en infraestructura privada. Analizan cómo cambian los recursos necesarios cuando aumenta la carga o el trabajo computacional. Los resultados muestran escalabilidad aproximadamente lineal cuando existen recursos suficientes, aunque la cantidad requerida varía considerablemente entre herramientas y casos de uso. Ningún framework resulta superior en todos los escenarios. La investigación aporta un procedimiento reproducible para evaluar escalabilidad y permite relacionar las decisiones de despliegue con los costos operativos de aplicaciones distribuidas.
+% FIN_RESUMEN_3
+\bloque{Dato concreto y localización}
+El estudio informa más de 740 horas de experimentos, con hasta 110 instancias simultáneas de microservicios. Ubicación en el abstract, apartado Method, p.~1 del manuscrito consultado.
+\bloque{Nota personal propuesta para adaptar}
+Esta fuente me orienta para definir qué significa escalar y qué recursos debo observar. La usaría en la evaluación de escalabilidad de TA-IND-01, considerando el costo de sostener una carga creciente.
+\bloque{Verificación y versión consultada}
+{\small Se consultó la versión de los autores en arXiv, identificador 2303.11088. La referencia corresponde al artículo de revista de 2024.}
+
+\clearpage
+{\small\color{heading}FICHA 4 / 5\par}
+{\Large\bfseries\color{heading}Recuperación y estabilidad ante fallos\par}
+\bloque{Referencia IEEE}
+\begin{otherlanguage}{english}
+\fullcite{vogel2024recovery}
+\end{otherlanguage}
+\bloque{Identificador DOI}
+\url{https://doi.org/10.1145/3629104.3666040}
+\bloque{Resumen de 100 palabras}
+% INICIO_RESUMEN_4
+Vogel y sus colaboradores examinan cómo se recuperan Flink, Kafka Streams y Spark Structured Streaming cuando fallan sus trabajadores. Utilizan ShuffleBench sobre Kubernetes e inyectan fallos recurrentes mediante técnicas de ingeniería del caos. Miden rendimiento, latencia, estabilidad y tiempo de recuperación bajo distintos escenarios. Sus resultados muestran diferencias entre frameworks y evidencian que recuperar la ejecución puede acompañarse de degradaciones persistentes. En Kafka Streams observan problemas relacionados con el rebalanceo y la distribución desigual del trabajo después de fallos. El estudio ofrece un método experimental para evaluar resiliencia, considerando tanto la continuidad del procesamiento como el comportamiento posterior del sistema.
+% FIN_RESUMEN_4
+\bloque{Dato concreto y localización}
+En el escenario de eliminación de pods se interrumpen 1, 2 o 4 trabajadores simultáneamente, con fallos repetidos cada cinco minutos. Ubicación en la sección 5.2, Failure Injection Scenarios, de la versión de los autores.
+\bloque{Nota personal propuesta para adaptar}
+Me permite distinguir la recuperación del servicio de la recuperación de su rendimiento. Usaría los escenarios y métricas en el análisis crítico de tolerancia a fallos, manteniendo explícita la versión de Kafka Streams evaluada.
+\bloque{Verificación y versión consultada}
+{\small Se consultó la versión de los autores en arXiv, identificador 2404.06203v3. El estudio emplea Kafka Streams 3.5, según su sección 4.2.}
+
+\clearpage
+{\small\color{heading}FICHA 5 / 5\par}
+{\Large\bfseries\color{heading}Ajuste de parámetros y rendimiento\par}
+\bloque{Referencia IEEE}
+\begin{otherlanguage}{english}
+\fullcite{chen2026tuning}
+\end{otherlanguage}
+\bloque{Identificador DOI}
+\url{https://doi.org/10.1145/3777911.3800636}
+\bloque{Resumen de 100 palabras}
+% INICIO_RESUMEN_5
+Chen y sus colaboradores investigan cómo mejorar el rendimiento de Kafka Streams mediante ajustes de configuración. Combinan muestreo por hipercubo latino, recocido simulado y búsqueda local, integrados con Theodolite para ejecutar experimentos en Kubernetes. Evalúan configuraciones sobre ShuffleBench y detienen anticipadamente aquellas con resultados deficientes. Encuentran mejoras de hasta el veintitrés por ciento frente a los valores predeterminados. El refinamiento final aporta beneficios limitados dentro de la variabilidad experimental. También observan que las configuraciones con mayor rendimiento incrementan la latencia. Sus resultados permiten discutir compromisos de configuración, aunque corresponden a una evaluación piloto con condiciones específicas de infraestructura y carga.
+% FIN_RESUMEN_5
+\bloque{Dato concreto y localización}
+La mejor ejecución de recocido simulado mejora aproximadamente un 23\,\% el throughput frente a la configuración base. Ubicación en la sección 4.2.2, Simulated Annealing, de la versión de los autores.
+\bloque{Nota personal propuesta para adaptar}
+La fuente me ayuda a cuestionar el uso automático de valores predeterminados. La emplearía en la discusión de configuración de TA-IND-01, relacionando rendimiento y latencia con las condiciones del experimento.
+\bloque{Verificación y versión consultada}
+{\small Se consultó la versión de los autores en arXiv, identificador 2603.04027v1. La sección 4.3 delimita los resultados a una evaluación piloto.}
+\end{document}
+
