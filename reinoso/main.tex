@@ -85,11 +85,11 @@
 	\campo{ISBN verificado}
 	978-1-939133-29-8 (actas de USENIX ATC 22; el art\'iculo no tiene DOI)
 	\campo{Resumen (100 palabras)}
-	\pendiente
+	Elhemali y su equipo de AWS cuentan cómo operan DynamoDB a gran escala y cómo cambió su arquitectura desde 2012. Presentan seis propiedades del servicio: gestión completa, multiinquilino, escala sin límite, rendimiento predecible, alta disponibilidad y uso flexible. Cada partición se copia en varias zonas de disponibilidad y elige líder con Multi-Paxos (protocolo de consenso). Solo el líder atiende escrituras y lecturas fuertes. El texto explica también cómo manejan fallos silenciosos, particiones calientes y despliegues, y da cifras reales, como un pico de 89,2 millones de peticiones por segundo en el Prime Day de 2021.
 	\campo{Dato concreto (con p\'agina o secci\'on)}
-	\pendiente
+	p. 1040: una escritura se confirma cuando un quórum (mayoría) de réplicas guarda el registro; solo el líder atiende escrituras y lecturas fuertemente consistentes, mientras que cualquier réplica puede atender lecturas eventualmente consistentes. p. 1045: un quórum de escritura sano son 2 de 3 réplicas en zonas de disponibilidad distintas.
 	\campo{Nota personal}
-	\pendiente
+	Es la base de lo que voy a contar de DynamoDB en la comparación de TA-IND-01. Su esquema de un líder por partición contrasta con Cassandra, que no tiene nodo líder, y ahí se explica buena parte de la diferencia en consistencia.
 	
 	\printbibliography[title={Referencias}]
 	
