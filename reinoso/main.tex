@@ -73,11 +73,11 @@
 	\campo{ISBN verificado}
 	978-1-939133-28-1 (actas de OSDI 22; el art\'iculo no tiene DOI)
 	\campo{Resumen (100 palabras)}
-	\pendiente
+	Huang y sus coautores estudian los fallos metaestables: una sobrecarga que sigue aunque ya haya desaparecido lo que la provocó. Para ver cómo ocurren en la práctica, revisan informes públicos de incidentes de empresas grandes y pequeñas. Separan el disparador (un pico de carga o una pérdida de capacidad) de lo que mantiene el problema, como los reintentos o la recolección de basura (liberación automática de memoria). Reproducen tres casos en aplicaciones de ejemplo de código abierto. Concluyen que estos fallos aparecen en las caídas más graves y que los reintentos son el factor de mantenimiento más frecuente.
 	\campo{Dato concreto (con p\'agina o secci\'on)}
-	\pendiente
+	Sección 2.2 (p. 75): los reintentos son el efecto que más veces mantiene el fallo, presente en más de la mitad de los incidentes. Resumen (p. 73): al menos 4 de las 15 caídas mayores de AWS (Amazon Web Services) en la última década fueron metaestables.
 	\campo{Nota personal}
-	\pendiente
+	Me da un caso real de fallo para la sección de tolerancia a fallos de TA-IND-01 y una advertencia útil: los reintentos de los clientes pueden empeorar la sobrecarga de un clúster, algo que tendré en cuenta al hablar de Cassandra bajo carga.
 	
 	\section*{Ficha 5. Elhemali et al. (2022): Amazon DynamoDB}
 	\campo{Referencia (IEEE)}
