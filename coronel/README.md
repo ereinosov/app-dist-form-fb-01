@@ -14,7 +14,7 @@ La selección también incluye estudios de Kafka Streams para analizar aplicacio
 
 El documento contiene cinco fichas, con tres artículos de revista y dos artículos de congresos ACM, publicados entre 2023 y 2026. Cada resumen propuesto tiene 100 palabras, contadas como unidades separadas por espacios.
 
-Quedan pendientes la lectura integral de las dos primeras fuentes y completar la evidencia de indexación.
+Queda pendiente la lectura integral de las dos primeras fuentes. La cobertura bibliográfica disponible se documenta en la sección de verificación.
 
 ## Archivos
 
@@ -83,7 +83,9 @@ IEEE Xplore presentó una comprobación de navegador y varias páginas editorial
 
 Los registros consultados de los tres artículos de revista no incluyen número de fascículo. El registro de Journal of Systems and Software utiliza el identificador de artículo 111879, guardado como `eid`. Los artículos de Elsevier corresponden a volúmenes de 2024 aunque sus DOI contienen 2023. Las versiones de autores se enlazan para lectura y el archivo `.bib` cita las publicaciones editoriales.
 
-La indexación de IEEE Access consta en su [página oficial de bibliometría](https://ieeeaccess.ieee.org/about/bibliometrics/). Falta dejar evidencia directa de la indexación de las dos revistas Elsevier y de las actas ACM, y consultar el año y la categoría aplicables si se documenta un cuartil. La selección sigue sujeta a esa comprobación.
+La cobertura de IEEE Access en Scopus y Web of Science consta en la página de IEEE. El catálogo de la biblioteca de DESY registra esas mismas bases para las dos revistas de Elsevier. [IEEE Access](https://ieeeaccess.ieee.org/about/bibliometrics/), [Future Generation Computer Systems](https://bib-pubdb1.desy.de/record/13085), [Journal of Systems and Software](https://bib-pubdb1.desy.de/record/10142).
+
+DBLP incluye los trabajos publicados en DEBS 2024 e ICPE Companion 2026. Queda pendiente una consulta directa de la cobertura de esas actas en Scopus o Web of Science. [DEBS 2024](https://dblp.org/pid/177/7371.html), [ICPE Companion 2026](https://dblp.org/rec/conf/wosp/ChenHMR26.html).
 
 ## Preparación de las fichas
 
