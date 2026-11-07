@@ -37,11 +37,11 @@
 	\campo{DOI verificado}
 	10.1186/s13677-024-00716-7
 	\campo{Resumen (100 palabras)}
-	\pendiente
+	Ferreira y su equipo quieren saber cuánto rendimiento se pierde al exigir más consistencia a una base NoSQL (Not only SQL, no relacional). Prueban Cassandra, MongoDB y Redis en Google Cloud, cada una por separado, con la herramienta de carga Locust y entre 1 y 10 usuarios simultáneos. Cassandra corre con tres nodos y factor de replicación 3, y comparan el nivel ONE (basta la respuesta de una réplica) con ALL (responden todas). Lo repiten con los nodos en una región y en varias. El resultado es claro: la consistencia fuerte baja el rendimiento y alarga las respuestas, y la distancia entre regiones agrava el efecto.
 	\campo{Dato concreto (con p\'agina o secci\'on)}
-	\pendiente
+	En la Tabla 8 (p. 14), pasar de consistencia débil a fuerte en Cassandra con réplicas en varias regiones reduce el rendimiento de escritura un 97,54 \% y sube el tiempo de respuesta un 6.028,34 \%. En una sola región, las lecturas pierden un 62,30 \% de rendimiento y tardan un 175,15 \% más.
 	\campo{Nota personal}
-	\pendiente
+	Esta fuente me da números concretos para la parte de CAP (consistencia, disponibilidad y tolerancia a particiones) y PACELC (si hay partición, disponibilidad o consistencia; si no, latencia o consistencia) de TA-IND-01. Tengo presente que su nivel fuerte es ALL y que solo un nodo recibió las peticiones, así que no puedo usar sus cifras como si fueran de QUORUM (mayoría de réplicas).
 	
 	\section*{Ficha 2. Rehman, Aguiar y Barraca (2022): tolerancia a fallos en la nube}
 	\campo{Referencia (IEEE)}
