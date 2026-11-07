@@ -43,17 +43,17 @@
 	\campo{Nota personal}
 	Esta fuente me da números concretos para la parte de CAP (consistencia, disponibilidad y tolerancia a particiones) y PACELC (si hay partición, disponibilidad o consistencia; si no, latencia o consistencia) de TA-IND-01. Tengo presente que su nivel fuerte es ALL y que solo un nodo recibió las peticiones, así que no puedo usar sus cifras como si fueran de QUORUM (mayoría de réplicas).
 	
-	\section*{Ficha 2. Rehman, Aguiar y Barraca (2022): tolerancia a fallos en la nube}
+	\newpage \section*{Ficha 2. Rehman, Aguiar y Barraca (2022): tolerancia a fallos en la nube}
 	\campo{Referencia (IEEE)}
 	\fullcite{rehman2022fault}
 	\campo{DOI verificado}
 	10.1109/ACCESS.2022.3182211
 	\campo{Resumen (100 palabras)}
-	\pendiente
+	Rehman, Aguiar y Barraca revisan más de cien trabajos sobre tolerancia a fallos en la nube. Empiezan fijando tres términos: falta (la causa), error (el estado que se desvía de lo esperado) y fallo (cuando el sistema deja de cumplir su función). Después reparten las técnicas en reactivas, que actúan cuando el problema ya ocurrió, y proactivas, que intentan adelantarse. Relacionan métricas de componente y de sistema, comparan arquitecturas existentes y cierran con temas abiertos: nube, niebla y borde, aprendizaje automático y consumo de energía. Su conclusión es que combinar ambos enfoques probablemente rinda más que elegir uno solo.
 	\campo{Dato concreto (con p\'agina o secci\'on)}
-	\pendiente
+	Secciones IV.F y IV.G. Entre las técnicas reactivas citan checkpoint/restart (guardar el estado y reiniciar desde ahí), replicación, migración de tareas y reintento. Entre las proactivas, autorreparación, migración preventiva, rejuvenecimiento de software y balanceo de carga. La sección VII advierte que las proactivas pueden costar más por el monitoreo continuo.
 	\campo{Nota personal}
-	\pendiente
+	Me sirve de marco para ordenar lo que hacen Cassandra y DynamoDB ante un fallo: la replicación y los reintentos quedan del lado reactivo, y con esta clasificación puedo decirlo con las mismas palabras en la sección de tolerancia a fallos de TA-IND-01.
 	
 	\section*{Ficha 3. Kumari y Kaur (2021): revisi\'on de tolerancia a fallos}
 	\campo{Referencia (IEEE)}
