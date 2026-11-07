@@ -1,0 +1,214 @@
+\documentclass[12pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=ieee,sorting=none]{biblatex}
+\addbibresource{refs.bib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{xcolor}
+\definecolor{azuluteq}{HTML}{143B5D}
+
+\begin{document}
+\begin{titlepage}
+\newgeometry{top=2.5cm,bottom=2.5cm,left=2.7cm,right=2.7cm}
+\thispagestyle{empty}
+
+\vspace*{0.5cm}
+
+\begin{center}
+
+{\color{azuluteq}\rule{\textwidth}{1.2pt}}\\[0.8cm]
+
+{\Large\bfseries Universidad Técnica Estatal de Quevedo}\\[0.3cm]
+{\large Facultad de Ciencias de la Computación}\\
+{\large Carrera de Software}
+
+\vspace{2.2cm}
+
+{\Large\bfseries Aplicaciones Distribuidas}
+
+\vspace{1.8cm}
+
+{\color{azuluteq}\rule{0.35\textwidth}{1.2pt}}\\[0.8cm]
+
+{\LARGE\bfseries FORM-FB-01: Fichas bibliográficas}\\[0.45cm]
+{\large Fundamentos de sistemas distribuidos y arquitecturas distribuidas}
+
+\vspace{0.8cm}
+
+{\color{azuluteq}\rule{0.35\textwidth}{1.2pt}}
+
+\end{center}
+
+\vfill
+
+\noindent
+\begin{tabular}{@{}p{0.23\textwidth}p{0.72\textwidth}@{}}
+\textbf{Estudiante:} & Nixon Piguave\\[0.2cm]
+\textbf{Nivel y paralelo:} & Séptimo nivel, paralelo A\\[0.2cm]
+\textbf{Fecha:} & 6 de noviembre de 2026\\[0.2cm]
+\textbf{Repositorio:} & \url{https://github.com/ereinosov/app-dist-form-fb-01.git}
+\end{tabular}
+
+\vspace*{0.7cm}
+
+\end{titlepage}
+\restoregeometry
+\section*{Ficha bibliográfica 1}
+
+\textbf{Referencia IEEE:}
+
+\fullcite{blinowski2022}
+
+\textbf{DOI verificado:}
+
+\url{https://doi.org/10.1109/ACCESS.2022.3152803}
+
+\textbf{Resumen:}
+
+El artículo menciona la problemática: las pequeñas empresas refactorizan monolitos a microservicios esperando beneficios similares a los de gigantes globales, pero para sistemas sin miles de usuarios concurrentes que se escalan verticalmente, los beneficios no se han investigado y la evidencia es inconsistente. 
+
+Para investigarlo, los autores implementaron una aplicación web de referencia en cuatro versiones, probadas localmente y en Azure. Los hallazgos indican que en una máquina un monolito tiene mejor rendimiento; el escalado vertical es más rentable que el horizontal en Azure; y la tecnología de implementación no tiene un impacto notable en el rendimiento de la escalabilidad.
+
+\textbf{Dato concreto y ubicación:}
+En la prueba del servicio City, de baja carga computacional, el sistema monolítico gestionó en promedio más del doble de solicitudes que la versión en microservicios en .NET y 1,37 veces más que la versión en Java.
+
+SECCIÓN V. Resultados, subsección A. Entorno local
+
+\textbf{Nota personal:}
+Comprendí que los microservicios no siempre ofrecen mejor rendimiento que un monolito y que el resultado depende de la carga del sistema y de cómo se escale. En la tarea (TA-IND-01) la usaría en el análisis crítico y comparativo para evaluar las decisiones de arquitectura y escalabilidad del sistema que vaya a elegir en ese momento.
+
+\clearpage
+\section*{Ficha bibliográfica 2}
+
+\textbf{Referencia IEEE:}
+
+\fullcite{ayas2023}
+
+\textbf{DOI verificado:}
+
+\url{https://doi.org/10.1007/s10664-023-10308-9}
+
+\textbf{Resumen:}
+
+Las migraciones a microservicios son complejas, requieren mucho tiempo y la mayoría de las guías se centran en aspectos aislados, por lo que falta una visión general clara sobre cómo se llevan a cabo. El método de investigación es un estudio cualitativo inductivo basado en entrevistas a 19 ingenieros y el análisis de 215 discusiones en StackOverflow, empleando técnicas de la teoría fundamentada. 
+
+Los resultados demuestran que las migraciones son un proceso iterativo que se desarrolla en dos modos de cambio: migración sistémica y migración técnica. La teoría contiene 2 modos de cambio, 14 actividades y 53 resultados de solución.
+
+\textbf{Dato concreto y ubicación:}
+
+Los microservicios son una forma de estructurar sistemas en componentes débilmente acoplados que se desarrollan y operan de forma independiente, cada uno con sus propios recursos.
+
+Sección 2 (Trabajos relacionados), subsección 2.1 Beneficios de los microservicios.
+
+\textbf{Nota personal:}
+
+El artículo me ayudó a comprender que adoptar microservicios no consiste solo en dividir un programa: también requiere cambios técnicos y organizativos que ocurren por etapas. En la tarea la usaré en el análisis crítico para valorar las decisiones y dificultades de arquitectura del sistema que vaya a analizar.
+
+\clearpage
+\section*{Ficha bibliográfica 3}
+
+\textbf{Referencia IEEE:}
+
+\fullcite{ataei2023}
+
+\textbf{DOI verificado:}
+
+\url{https://doi.org/10.1186/s40537-023-00733-4}
+
+\textbf{Resumen:}
+
+Entre los desafíos destacan el desarrollo de sistemas de big data y la arquitectura de datos, lo que requiere comprender su complejidad, pues solo el 13\% de las organizaciones lograron implementar su estrategia de datos. Por ello, el estudio tiene como objetivo facilitar el desarrollo de la arquitectura de datos mediante la aplicación de patrones de arquitectura de microservicios. 
+
+Este objetivo se logra mediante dos revisiones sistemáticas de la literatura y la integración de resultados mediante una síntesis temática. Los resultados indican que las arquitecturas de big data pueden beneficiarse de muchos principios y patrones de la arquitectura de microservicios.
+
+\textbf{Dato concreto y ubicación:}
+
+Según un informe de New Vantage Partners de 2022, solo el 26,5 \% de las empresas lograron adoptar un enfoque basado en datos.
+
+Sección: Introducción
+
+\textbf{Nota personal:}
+
+Pude entender que los patrones de microservicios deben relacionarse con las necesidades de los datos que procesa cada sistema. En la tarea me servirá para describir la arquitectura del sistema que vaya a analizar y justificar si su diseño responde a sus necesidades.
+
+\clearpage
+\section*{Ficha bibliográfica 4}
+
+\textbf{Referencia IEEE:}
+
+\fullcite{almaruf2022}
+
+\textbf{DOI verificado:}
+
+\url{https://doi.org/10.1109/SOSE55356.2022.00010}
+
+\textbf{Resumen:}
+
+Los sistemas de microservicios suelen evolucionar de forma descentralizada, por lo que es necesario monitorizarlos para identificar cuándo extensiones mal diseñadas deterioran la calidad del sistema. Dada la descentralización y la posible diversidad de lenguajes en los microservicios, las herramientas de análisis estático son escasas. 
+
+Por otro lado, existen herramientas bastante usadas por profesionales que ofrecen registro, seguimiento y recopilación de métricas centralizados para microservicios. Los autores evalúan la oportunidad de combinar herramientas de análisis dinámico con detección de anomalías mediante métricas de calidad y antipatrones. Desarrollaron un prototipo que utilizaron para evaluar un sistema de microservicios de gran tamaño.
+
+\textbf{Dato concreto y ubicación:}
+
+La arquitectura de microservicios (MSA) se ha convertido en el estándar de la industria. Gracias a su naturaleza flexible, permite una escalabilidad eficiente, mayor resiliencia y una entrega de software más rápida.
+
+Sección I. Introducción
+
+\textbf{Nota personal:}
+
+Entendí que los registros de ejecución permiten ver qué servicios se comunican y detectar posibles cuellos de botella. En la tarea usaré esto para analizar la comunicación y el escalado del sistema que elija, si está basado en microservicios.
+
+\clearpage
+\section*{Ficha bibliográfica 5}
+
+\textbf{Referencia IEEE:}
+
+\fullcite{cerny2022}
+
+\textbf{DOI verificado:}
+
+\url{https://doi.org/10.1109/SOSE55356.2022.00011}
+
+\textbf{Resumen:}
+
+El documento aborda la degradación arquitectónica en microservicios por cambios continuos sin actualización documental. Revisa técnicas de reconstrucción arquitectónica (SAR) basadas en análisis estático (código fuente y artefactos) y análisis dinámico (trazas de ejecución y monitoreo). 
+
+Los resultados muestran que las herramientas dinámicas están ampliamente extendidas en la industria para visualizar diagramas de llamadas, pero carecen de soporte para patrones, métricas y degradación. Por su parte, el análisis estático permite detectar problemas antes de producción integrándose en el desarrollo. Se concluye que falta desarrollo en el análisis estático y métricas de calidad en herramientas dinámicas para sistemas basados en microservicios.
+
+\textbf{Dato concreto y ubicación:}
+
+Una carencia importante de las herramientas de análisis dinámico es el soporte para patrones arquitectónicos, antipatrones y métricas de software.
+
+Sección V (DISCUSSION), segundo párrafo
+
+\textbf{Nota personal:}
+
+Entendí que puedo conocer cómo está organizado un sistema revisando su código, sus registros de ejecución o analizándolo manualmente. En la tarea usaré esto para describir sus servicios y cómo se comunican, si el sistema que elija usa microservicios.
+
+
+
+\section*{Declaración de uso de inteligencia artificial}
+
+\textbf{Herramienta utilizada:} ChatGPT, modelo Luna 6.
+
+\textbf{Para qué la usé:}
+\begin{enumerate}
+    \item Para buscar fuentes de información; más específicamente, las tres primeras.
+    \item Para organizar y estructurar la información en Latex y hacer una carátula más presentable.
+    \item Me ayudó con borradores basados en información que obtuve personalmente de cada artículo.
+    \item Me ayudó a buscar una alternativa para visualizar completos los artículos de las dos últimas fuentes, debido a que Scopus me redirigía a IEEE Xplore, donde necesitaba una cuenta que no poseo. Entonces, usando la IA, busqué dónde podía leerlos completos. Adjunto los dos enlaces mencionados:
+    \begin{itemize}
+        \item Ficha 4: \url{https://arxiv.org/abs/2207.02776}
+        \item Ficha 5: \url{https://arxiv.org/abs/2207.02988}
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Cómo verifiqué lo obtenido:}
+
+Verifiqué personalmente los datos bibliográficos y los DOI, comparando la información redactada en el archivo \texttt{.bib}. Finalmente, adapté los borradores según la información que obtuve personalmente.
+
+\end{document}
