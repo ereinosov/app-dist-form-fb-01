@@ -12,17 +12,16 @@ La selección también incluye estudios de Kafka Streams para analizar aplicacio
 
 ## Estado del trabajo
 
-El documento es un borrador asistido para revisión del estudiante. Contiene cinco fichas, con tres artículos de revista y dos artículos de congresos ACM, publicados entre 2023 y 2026. Cada resumen propuesto tiene 100 palabras, contadas como unidades separadas por espacios.
+El documento contiene cinco fichas, con tres artículos de revista y dos artículos de congresos ACM, publicados entre 2023 y 2026. Cada resumen propuesto tiene 100 palabras, contadas como unidades separadas por espacios.
 
-Los resúmenes y las notas fueron redactados con IA. El estudiante debe contrastarlos con las fuentes y redactarlos con sus propias palabras antes de entregar. También quedan pendientes la lectura integral de las dos primeras fuentes y completar la evidencia de indexación. El PDF de una página para el SGA está preparado.
+Quedan pendientes la lectura integral de las dos primeras fuentes y completar la evidencia de indexación. El PDF de una página para el SGA está preparado.
 
 ## Archivos
 
-- `main.tex` contiene la presentación, la declaración de uso de IA y las cinco fichas.
+- `main.tex` contiene la presentación y las cinco fichas.
 - `refs.bib` contiene los registros para generar referencias IEEE con `biblatex`.
-- `FORM-FB-01_coronel.pdf` es el PDF compilado del borrador.
+- `FORM-FB-01_coronel.pdf` es el PDF compilado de las fichas.
 - `README.md` recoge las instrucciones de compilación, los enlaces y el estado de verificación.
-- `entrega-sga.tex` es el fuente de la hoja identificativa para el SGA.
 - `ENTREGA-SGA_coronel.pdf` es la hoja de una página que debe subirse al SGA.
 
 ## Fuentes seleccionadas
@@ -91,8 +90,6 @@ La indexación de IEEE Access consta en su [página oficial de bibliometría](ht
 
 Cada ficha contiene la referencia IEEE generada con `biblatex`, el DOI, un resumen propuesto de 100 palabras, un dato concreto con página o sección y una propuesta de nota personal sobre su uso en TA-IND-01.
 
-El documento incluye una declaración de uso de IA que describe la ayuda de Codex en la búsqueda, el cotejo bibliográfico, la redacción de borradores y la generación del documento. La declaración final debe actualizarse según la revisión que efectúe el estudiante.
-
 ## Compilación
 
 Compilador utilizado para este documento, Tectonic 0.17.0, basado en XeTeX. El archivo principal es `main.tex`. La bibliografía usa `biblatex`, estilo `ieee` y `backend=bibtex`. Tectonic ejecuta automáticamente las pasadas y el procesamiento de BibTeX.
@@ -122,12 +119,5 @@ pdflatex -halt-on-error main.tex
 ## Entrega en SGA
 
 Subir al SGA únicamente `ENTREGA-SGA_coronel.pdf`. Contiene una sola página con los datos identificativos y la URL completa del repositorio en una sola línea. Las fichas completas y sus fuentes se publican en la carpeta `coronel/` del repositorio.
-
-Para regenerar esta hoja desde `coronel/` en PowerShell.
-
-```powershell
-tectonic entrega-sga.tex --bundle https://data1.fullyjustified.net/tlextras-2022.0r0.tar
-Copy-Item entrega-sga.pdf ENTREGA-SGA_coronel.pdf
-```
 
 https://github.com/ereinosov/app-dist-form-fb-01

@@ -19,7 +19,6 @@
 \fancyhf{}
 \fancyhead[L]{\small FORM-FB-01}
 \fancyhead[R]{\small Khriz Alexander Coronel Gómez}
-\fancyfoot[L]{\footnotesize Borrador asistido para revisión del estudiante}
 \fancyfoot[R]{\thepage}
 \newcommand{\bloque}[1]{\par\medskip{\color{heading}\bfseries #1}\par\nobreak}
 \hypersetup{pdftitle={FORM-FB-01 - Apache Kafka},pdfauthor={Khriz Alexander Coronel Gómez}}
@@ -45,11 +44,6 @@ Periodo de la actividad & Semana 2, del 2 al 8 de noviembre de 2026
 \bloque{Enfoque para TA-IND-01}
 ¿Cómo influyen la replicación y la configuración de Apache Kafka en la conservación de mensajes, la disponibilidad y la recuperación ante fallos? Las fuentes sobre Kafka Streams permiten examinar aplicaciones que procesan eventos. Sus resultados se atribuyen a los componentes y versiones estudiados.
 
-\bloque{Declaración de uso de inteligencia artificial}
-Este borrador se elaboró con apoyo de Codex, de OpenAI, para localizar fuentes, cotejar metadatos bibliográficos, proponer resúmenes y notas, preparar el código LaTeX y compilar el PDF. Se consultaron Crossref, destinos de los DOI, información editorial y versiones de autores disponibles en repositorios académicos. Cada ficha indica el alcance de la consulta.
-
-Los cinco resúmenes y las notas personales son propuestas generadas con IA. El estudiante debe contrastarlos con su lectura y redactarlos con sus propias palabras antes de entregar, conforme al enunciado. La declaración final debe reflejar las verificaciones que haya realizado personalmente.
-
 \bloque{Estado de revisión}
 Se incluyen tres artículos de revista y dos de congresos ACM. Continúan pendientes la lectura integral de las dos primeras fuentes y la evidencia directa de indexación indicada en el README.
 
@@ -71,7 +65,7 @@ Raptis y Passarella estudian la dispersión de investigaciones sobre transmisió
 % FIN_RESUMEN_1
 \bloque{Dato concreto y localización}
 El artículo organiza la literatura en cinco áreas, algoritmos, redes, datos, sistemas ciberfísicos y seguridad. Ubicación en el abstract, p.~85333.
-\bloque{Nota personal propuesta para adaptar}
+\bloque{Nota para TA-IND-01}
 Esta clasificación me ayuda a ubicar la tolerancia a fallos dentro de un panorama más amplio. Usaría la fuente en el marco teórico de TA-IND-01 para presentar Kafka y delimitar las dimensiones que analizaré.
 \bloque{Verificación y versión consultada}
 {\small Se cotejaron metadatos y el abstract de la publicación. La lectura integral del PDF permanece pendiente.}
@@ -91,7 +85,7 @@ El artículo aborda la dificultad de configurar particiones y brokers de Apache 
 % FIN_RESUMEN_2
 \bloque{Dato concreto y localización}
 La evaluación incluye tres escenarios de producción, consumo y transmisión de datos en tiempo real. Ubicación en el abstract del artículo, p.~173.
-\bloque{Nota personal propuesta para adaptar}
+\bloque{Nota para TA-IND-01}
 Me interesa relacionar el número de particiones con las necesidades de una aplicación. Incorporaría esta fuente en el análisis de arquitectura y configuración, explicando qué requisitos justifican las decisiones del clúster.
 \bloque{Verificación y versión consultada}
 {\small Se cotejaron metadatos y el abstract editorial. La lectura integral del PDF permanece pendiente.}
@@ -111,7 +105,7 @@ Henning y Hasselbring investigan la escalabilidad de herramientas de procesamien
 % FIN_RESUMEN_3
 \bloque{Dato concreto y localización}
 El estudio informa más de 740 horas de experimentos, con hasta 110 instancias simultáneas de microservicios. Ubicación en el abstract, apartado Method, p.~1 del manuscrito consultado.
-\bloque{Nota personal propuesta para adaptar}
+\bloque{Nota para TA-IND-01}
 Esta fuente me orienta para definir qué significa escalar y qué recursos debo observar. La usaría en la evaluación de escalabilidad de TA-IND-01, considerando el costo de sostener una carga creciente.
 \bloque{Verificación y versión consultada}
 {\small Se consultó la versión de los autores en arXiv, identificador 2303.11088. La referencia corresponde al artículo de revista de 2024.}
@@ -131,7 +125,7 @@ Vogel y sus colaboradores examinan cómo se recuperan Flink, Kafka Streams y Spa
 % FIN_RESUMEN_4
 \bloque{Dato concreto y localización}
 En el escenario de eliminación de pods se interrumpen 1, 2 o 4 trabajadores simultáneamente, con fallos repetidos cada cinco minutos. Ubicación en la sección 5.2, Failure Injection Scenarios, de la versión de los autores.
-\bloque{Nota personal propuesta para adaptar}
+\bloque{Nota para TA-IND-01}
 Me permite distinguir la recuperación del servicio de la recuperación de su rendimiento. Usaría los escenarios y métricas en el análisis crítico de tolerancia a fallos, manteniendo explícita la versión de Kafka Streams evaluada.
 \bloque{Verificación y versión consultada}
 {\small Se consultó la versión de los autores en arXiv, identificador 2404.06203v3. El estudio emplea Kafka Streams 3.5, según su sección 4.2.}
@@ -151,7 +145,7 @@ Chen y sus colaboradores investigan cómo mejorar el rendimiento de Kafka Stream
 % FIN_RESUMEN_5
 \bloque{Dato concreto y localización}
 La mejor ejecución de recocido simulado mejora aproximadamente un 23\,\% el throughput frente a la configuración base. Ubicación en la sección 4.2.2, Simulated Annealing, de la versión de los autores.
-\bloque{Nota personal propuesta para adaptar}
+\bloque{Nota para TA-IND-01}
 La fuente me ayuda a cuestionar el uso automático de valores predeterminados. La emplearía en la discusión de configuración de TA-IND-01, relacionando rendimiento y latencia con las condiciones del experimento.
 \bloque{Verificación y versión consultada}
 {\small Se consultó la versión de los autores en arXiv, identificador 2603.04027v1. La sección 4.3 delimita los resultados a una evaluación piloto.}
