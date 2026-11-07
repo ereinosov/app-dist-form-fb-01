@@ -14,7 +14,7 @@ La selección también incluye estudios de Kafka Streams para analizar aplicacio
 
 El documento contiene cinco fichas, con tres artículos de revista y dos artículos de congresos ACM, publicados entre 2023 y 2026. Cada resumen propuesto tiene 100 palabras, contadas como unidades separadas por espacios.
 
-Quedan pendientes la lectura integral de las dos primeras fuentes y completar la evidencia de indexación. El PDF de una página para el SGA está preparado.
+Quedan pendientes la lectura integral de las dos primeras fuentes y completar la evidencia de indexación.
 
 ## Archivos
 
@@ -22,7 +22,6 @@ Quedan pendientes la lectura integral de las dos primeras fuentes y completar la
 - `refs.bib` contiene los registros para generar referencias IEEE con `biblatex`.
 - `FORM-FB-01_coronel.pdf` es el PDF compilado de las fichas.
 - `README.md` recoge las instrucciones de compilación, los enlaces y el estado de verificación.
-- `ENTREGA-SGA_coronel.pdf` es la hoja de una página que debe subirse al SGA.
 
 ## Fuentes seleccionadas
 
@@ -115,9 +114,3 @@ bibtex main
 pdflatex -halt-on-error main.tex
 pdflatex -halt-on-error main.tex
 ```
-
-## Entrega en SGA
-
-Subir al SGA únicamente `ENTREGA-SGA_coronel.pdf`. Contiene una sola página con los datos identificativos y la URL completa del repositorio en una sola línea. Las fichas completas y sus fuentes se publican en la carpeta `coronel/` del repositorio.
-
-https://github.com/ereinosov/app-dist-form-fb-01
